@@ -14,46 +14,60 @@
 <body class="bg-[#f7f7f2] text-zinc-950">
   <div class="page-glow"></div>
 
-  <main class="min-h-screen w-full overflow-hidden bg-[#f7f7f2]">
-    <header class="sticky top-0 z-50 border-b border-black/5 bg-[#f7f7f2]/80 backdrop-blur-xl">
-      <nav class="flex items-center justify-between px-6 py-5 md:px-10 lg:px-16">
-        <a href="#home" class="group flex items-center gap-3">
-          <span class="grid h-9 w-9 place-items-center rounded-full bg-zinc-950 text-sm font-bold text-white transition-transform duration-300 group-hover:rotate-12">DO</span>
-          <span class="hidden text-sm font-semibold md:block">Dexter Orro</span>
-        </a>
+  <header class="sticky top-0 z-50 border-b border-black/5 bg-[#f7f7f2]/80 backdrop-blur-xl">
+    <nav class="relative flex items-center justify-between px-6 py-5 md:px-10 lg:px-16">
+      <a href="#home" class="group flex items-center gap-3">
+        <span class="grid h-9 w-9 place-items-center rounded-full bg-zinc-950 text-sm font-bold text-white transition-transform duration-300 group-hover:rotate-12">DO</span>
+        <span class="hidden text-sm font-semibold md:block">Dexter Orro</span>
+      </a>
 
-        <div class="hidden items-center gap-8 text-sm text-zinc-600 md:flex">
-          <a class="nav-link" href="#work">Work</a>
-          <a class="nav-link" href="#services">Services</a>
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="articles/index.html">Articles</a>
-          <a class="nav-link" href="#contact">Contact</a>
+      <div class="hidden items-center gap-8 text-sm text-zinc-600 md:flex">
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="articles/index.html">Articles</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-2 md:gap-3">
+        <a href="#contact" class="rounded-full bg-zinc-950 px-4 py-2.5 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-zinc-800 sm:px-5">Let’s talk</a>
+        <button type="button" id="nav-toggle" class="inline-flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl text-zinc-900 transition hover:bg-black/5 md:hidden" aria-expanded="false" aria-controls="nav-mobile">
+          <svg class="nav-toggle-icon-open h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="nav-toggle-icon-close hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18"/></svg>
+          <span class="sr-only">Menu</span>
+        </button>
+      </div>
+
+      <div id="nav-mobile" class="nav-mobile-panel absolute inset-x-0 top-full z-50 border-b border-black/5 bg-[#f7f7f2]/95 px-6 py-4 shadow-lg backdrop-blur-xl md:hidden" role="dialog" aria-modal="true" aria-label="Main menu">
+        <div class="flex flex-col gap-0 pb-2 text-base font-medium text-zinc-800">
+          <a class="nav-mobile-link rounded-lg px-2 py-3 transition hover:bg-black/5" href="#work">Work</a>
+          <a class="nav-mobile-link rounded-lg px-2 py-3 transition hover:bg-black/5" href="#services">Services</a>
+          <a class="nav-mobile-link rounded-lg px-2 py-3 transition hover:bg-black/5" href="#projects">Projects</a>
+          <a class="nav-mobile-link rounded-lg px-2 py-3 transition hover:bg-black/5" href="articles/index.html">Articles</a>
+          <a class="nav-mobile-link rounded-lg px-2 py-3 transition hover:bg-black/5" href="#contact">Contact</a>
         </div>
+      </div>
+    </nav>
+  </header>
 
-        <div class="flex items-center gap-3">
-
-          <a href="#contact" class="rounded-full bg-zinc-950 px-5 py-2.5 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-zinc-800">Let’s talk</a>
-        </div>
-      </nav>
-    </header>
-
-    <section id="home" class="relative grid min-h-[620px] items-center gap-12 px-4 py-20 sm:px-6 md:px-8 lg:grid-cols-[1.05fr_.95fr] lg:px-10 xl:px-12">
-      <div class="animate-fade-up">
+  <main class="min-h-screen w-full overflow-x-hidden bg-[#f7f7f2]">
+    <section id="home" class="relative grid min-h-[620px] items-center gap-12 overflow-x-hidden px-6 py-20 md:px-10 lg:grid-cols-[1.05fr_.95fr] lg:px-16">
+      <div class="animate-fade-up min-w-0">
         <div class="mb-8 flex items-center gap-4">
           <div class="avatar-ring">
             <img src="img/image.jfif" alt="Dexter Orro" width="56" height="56" class="block h-14 w-14 rounded-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div>
-            <p class="text-sm font-semibold">Available for digital projects</p>
-            <p class="text-xs text-zinc-500">Web design • Development • Systems</p>
+            <p class="text-sm font-semibold">Available for Tech Projects</p>
+            <p class="text-xs text-zinc-500">Web Development • Custom Business Systems</p>
           </div>
         </div>
 
         <h1 class="max-w-2xl text-5xl font-semibold tracking-[-0.07em] text-zinc-950 sm:text-6xl lg:text-7xl" aria-label="Hello! I'm Dexter Orro">
-          <span id="hero-type-line"></span><span id="hero-type-name" class="text-gradient"></span><span id="hero-type-cursor" class="type-cursor" aria-hidden="true"></span>
+          <span id="hero-type-line"></span><span id="hero-type-name-wrap" class="mt-2 block sm:mt-0 sm:inline"><span id="hero-type-name" class="text-gradient"></span><span id="hero-type-cursor" class="type-cursor" aria-hidden="true"></span></span>
         </h1>
         <p class="mt-6 max-w-xl text-lg leading-8 text-zinc-600">
-          A modern web developer and digital creator based in the Philippines, building clean interfaces and practical systems for real-world use.
+          Modern websites. Custom systems. Clean design and reliable development for your digital needs.
         </p>
 
         <div class="mt-10 flex flex-wrap gap-3">
@@ -62,7 +76,7 @@
         </div>
       </div>
 
-      <div class="relative animate-float">
+      <div class="relative min-w-0 w-full animate-float">
         <div class="hero-card">
           <div class="flex items-start justify-between gap-4">
             <div class="min-w-0 flex-1">
@@ -70,7 +84,7 @@
               <h2 class="mt-3 text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
                 Websites and Systems Built for Growth
               </h2>
-              <p class="mt-3 text-sm leading-relaxed text-zinc-600 md:text-base">
+              <p class="mt-3 text-justify text-sm leading-relaxed text-zinc-600 md:text-left md:text-base">
                 From modern landing pages to full CRUD systems — clean design, organized structure, and reliable development.
               </p>
             </div>
@@ -98,15 +112,15 @@
         <div class="mt-8 space-y-4">
           <article class="timeline-card">
             <span class="icon-box">01</span>
-            <div><h3>Freelance Web Developer</h3><p>2021–2023</p></div>
+            <div><h3>Freelance Web Developer</h3><p>2021 – 2023</p></div>
           </article>
           <article class="timeline-card">
             <span class="icon-box">02</span>
-            <div><h3>Intern Web Developer</h3><p>2023–2024</p></div>
+            <div><h3>Intern Web Developer</h3><p>2023 – 2024</p></div>
           </article>
           <article class="timeline-card">
             <span class="icon-box">03</span>
-            <div><h3>Junior Computer Programmer</h3><p>2025–present</p></div>
+            <div><h3>Junior Computer Programmer</h3><p>2025 – Present</p></div>
           </article>
         </div>
       </div>
@@ -119,14 +133,14 @@
             <span class="icon-box">01</span>
             <div class="min-w-0 flex-1">
               <h3>Programmer of the year</h3>
-              <p>Northeastern College · Issued Jul 2024</p>
+              <p>Northeastern College  </p>
             </div>
           </article>
           <article class="award-card">
             <span class="icon-box">02</span>
             <div class="min-w-0 flex-1">
               <h3>Web Developer of the year</h3>
-              <p>Northeastern College · Issued Jul 2024</p>
+              <p>Northeastern College </p>
             </div>
           </article>
           <article class="award-card">
@@ -134,7 +148,7 @@
             <div class="award-card__inner">
               <div class="award-card__text">
                 <h3>Responsive Web Design</h3>
-                <p>freeCodeCamp · Issued Feb 2024</p>
+                <p>FreeCodeCamp </p>
               </div>
               <a class="award-credential-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="See credential for Responsive Web Design (opens in new tab)">
                 <svg class="award-credential-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M17 7H9.5M17 7v7.5"/></svg>
@@ -148,7 +162,7 @@
               <div class="award-card__inner">
                 <div class="award-card__text">
                   <h3>PHP &amp; MySQL — Certification Course for Beginners</h3>
-                  <p>Udemy · Issued Nov 2022</p>
+                  <p>Udemy </p>
                 </div>
                 <a class="award-credential-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="See credential for PHP and MySQL course (opens in new tab)">
                   <svg class="award-credential-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M17 7H9.5M17 7v7.5"/></svg>
@@ -160,15 +174,15 @@
               <span class="icon-box">05</span>
               <div class="min-w-0 flex-1">
                 <h3>Coding Basic: Creating your Web Profile using HTML, CSS, and Bootstrap</h3>
-                <p>Zuitt — Coding Bootcamp · Issued Aug 2022<br /><span class="text-zinc-500">Credential ID 01855</span></p>
+                <p>Zuitt — Coding Bootcamp</p>
               </div>
             </article>
             <article class="award-card">
               <span class="icon-box">06</span>
-              <div class="award-card__inner">
+              <div class="award-card__inner"> 
                 <div class="award-card__text">
                   <h3>Learn HTML — For Beginners</h3>
-                  <p>Udemy · Issued Jul 2022<br /><span class="text-zinc-500">Credential ID 0004</span></p>
+                  <p>Udemy</p>
                 </div>
                 <a class="award-credential-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="See credential for Learn HTML course (opens in new tab)">
                   <svg class="award-credential-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M17 7H9.5M17 7v7.5"/></svg>
@@ -180,7 +194,7 @@
               <span class="icon-box">07</span>
               <div class="min-w-0 flex-1">
                 <h3>Microsoft Digital Literacy</h3>
-                <p>TESDA: Technical Education and Skills Development Authority · Issued Feb 2022<br /><span class="text-zinc-500">Credential ID sKxlC8udJT</span></p>
+                <p>Technical Education and Skills Development Authority (TESDA)</p>
               </div>
             </article>
           </div>
@@ -200,18 +214,39 @@
 
       <div class="grid gap-5 lg:grid-cols-3">
         <article class="service-card reveal">
-          <span class="service-number">01</span>
-          <h3>Modern website design</h3>
+          <span class="service-number service-number--live" aria-hidden="true">
+            <svg class="service-number__svg service-number__svg--monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+              <path d="M8 20h8"></path>
+              <path d="M12 16v4"></path>
+              <circle class="service-number__ping" cx="18" cy="8" r="1.25" fill="#4ade80" stroke="none"></circle>
+            </svg>
+          </span>
+          <h3>Modern Web Design</h3>
           <p>Landing pages and portfolio websites with clean layouts, responsive sections, and smooth animations.</p>
         </article>
         <article class="service-card reveal delay-100">
-          <span class="service-number">02</span>
-          <h3>Web system development</h3>
+          <span class="service-number service-number--live" aria-hidden="true">
+            <svg class="service-number__svg service-number__svg--server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="3" width="16" height="6" rx="1.5"></rect>
+              <rect x="4" y="10.5" width="16" height="6" rx="1.5"></rect>
+              <circle class="service-led" cx="8" cy="6" r="0.85" fill="#34d399" stroke="none"></circle>
+              <circle class="service-led service-led--delay" cx="8" cy="13.5" r="0.85" fill="#34d399" stroke="none"></circle>
+            </svg>
+          </span>
+          <h3>Web System Development</h3>
           <p>CRUD systems, dashboards, database workflows, forms, validation, and admin modules.</p>
         </article>
         <article class="service-card reveal delay-200">
-          <span class="service-number">03</span>
-          <h3>UI improvement</h3>
+          <span class="service-number service-number--live" aria-hidden="true">
+            <svg class="service-number__svg service-number__svg--layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path class="service-number__stroke service-number__stroke--1" d="M4 6.5h16"></path>
+              <rect x="4" y="5" width="16" height="14" rx="2"></rect>
+              <path class="service-number__stroke service-number__stroke--2" d="M8 11h8"></path>
+              <path class="service-number__stroke service-number__stroke--3" d="M8 14h5"></path>
+            </svg>
+          </span>
+          <h3>UI Improvement</h3>
           <p>Enhancing old pages into modern interfaces using Tailwind, custom CSS, and better user experience.</p>
         </article>
       </div>
@@ -228,8 +263,8 @@
       <div class="project-strip">
         <article class="project-card large reveal">
           <div class="browser-dots"><span></span><span></span><span></span></div>
-          <h3>Procurement Planning System</h3>
-          <p>Versioning, indicative/final workflow, approval states, and amendment tracking.</p>
+          <h3>Family Budgeting System</h3>
+          <p>A system that helps families manage their finances by tracking income, expenses, and savings.</p>
           <div class="mock-grid"><span></span><span></span><span></span><span></span></div>
         </article>
         <article class="project-card reveal delay-100">
@@ -317,6 +352,32 @@
 
     document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
+    (function mobileNav() {
+      const btn = document.getElementById('nav-toggle');
+      const panel = document.getElementById('nav-mobile');
+      if (!btn || !panel) return;
+      const openIcon = btn.querySelector('.nav-toggle-icon-open');
+      const closeIcon = btn.querySelector('.nav-toggle-icon-close');
+
+      function setNavOpen(open) {
+        btn.setAttribute('aria-expanded', String(open));
+        panel.classList.toggle('is-open', open);
+        document.body.classList.toggle('nav-mobile-open', open);
+        if (openIcon && closeIcon) {
+          openIcon.classList.toggle('hidden', open);
+          closeIcon.classList.toggle('hidden', !open);
+        }
+      }
+
+      btn.addEventListener('click', () => setNavOpen(!panel.classList.contains('is-open')));
+      panel.querySelectorAll('.nav-mobile-link').forEach((link) =>
+        link.addEventListener('click', () => setNavOpen(false))
+      );
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') setNavOpen(false);
+      });
+    })();
+
     (function heroTyping() {
       const lineEl = document.getElementById('hero-type-line');
       const nameEl = document.getElementById('hero-type-name');
@@ -338,14 +399,19 @@
 
       let typingGen = 0;
 
+      const nameWrapEl = document.getElementById('hero-type-name-wrap');
+
       function ensureCursor() {
         let c = document.getElementById('hero-type-cursor');
+        const host = nameWrapEl || h1;
         if (!c) {
           c = document.createElement('span');
           c.id = 'hero-type-cursor';
           c.className = 'type-cursor';
           c.setAttribute('aria-hidden', 'true');
-          h1.appendChild(c);
+          host.appendChild(c);
+        } else if (!host.contains(c)) {
+          host.appendChild(c);
         }
         c.classList.remove('type-cursor--done');
         return c;
