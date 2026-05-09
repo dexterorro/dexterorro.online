@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Common IDE Extensions Developers Use Every Day | Dexter Orro</title>
+  <meta name="description" content="A practical overview of popular VS Code and Cursor extensions for formatting, Git, productivity, and testing—without slowing your editor down." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="bg-[#f7f7f2] text-zinc-950">
+  <div class="page-glow"></div>
+
+  <main class="min-h-screen w-full overflow-hidden bg-[#f7f7f2]">
+    <header class="sticky top-0 z-50 border-b border-black/5 bg-[#f7f7f2]/80 backdrop-blur-xl">
+      <nav class="flex items-center justify-between px-6 py-5 md:px-10 lg:px-16">
+        <a href="../index.html#home" class="group flex items-center gap-3">
+          <span class="grid h-9 w-9 place-items-center rounded-full bg-zinc-950 text-sm font-bold text-white transition-transform duration-300 group-hover:rotate-12">DO</span>
+          <span class="hidden text-sm font-semibold md:block">Dexter Orro</span>
+        </a>
+        <a class="text-sm font-medium text-zinc-600 hover:text-zinc-900" href="index.html">Articles</a>
+      </nav>
+    </header>
+
+    <div class="mx-auto max-w-4xl px-5 py-12 sm:px-8 md:px-12 lg:py-16">
+      <article class="article-content">
+        <p class="article-category">Toolbox</p>
+
+        <h1>Common IDE Extensions Developers Use in VS Code &amp; Cursor</h1>
+
+        <p>
+          Modern IDEs like <strong>Visual Studio Code</strong> and <strong>Cursor</strong> (which builds on the same extension ecosystem) let you add small tools that handle formatting, Git history, API testing, and more. You do not need dozens of extensions—a focused set keeps your editor fast and easier to maintain.
+        </p>
+
+        <h2>Formatting and code quality</h2>
+        <p>
+          <strong>ESLint</strong> is widely used in JavaScript and TypeScript projects to catch common mistakes and enforce team rules. <strong>Prettier</strong> (or your formatter of choice) keeps indentation, quotes, and line breaks consistent so code reviews focus on logic, not style. Many teams enable “format on save” so the editor fixes layout automatically.
+        </p>
+
+        <h2>Git inside the editor</h2>
+        <p>
+          <strong>GitLens</strong> is one of the most installed extensions: it adds blame information, file history, and comparisons without leaving the IDE. It helps answer “who changed this line?” and “what did this file look like last week?” For day‑to‑day commits and branches, the built‑in Source Control view is often enough—but GitLens adds depth when you debug regressions or onboard to a new codebase.
+        </p>
+
+        <h2>Productivity and navigation</h2>
+        <p>
+          Extensions like <strong>Path Intellisense</strong> suggest file paths as you type imports—useful in large folders. Pairs that rename HTML/JSX tags together save time when refactoring markup. Many quality‑of‑life features (bracket colorization, better indentation guides) are now built into VS Code; check Settings before installing overlapping extensions.
+        </p>
+
+        <h2>APIs and databases</h2>
+        <p>
+          <strong>REST Client</strong> or <strong>Thunder Client</strong> lets you send HTTP requests from the editor instead of switching to a separate app—handy for testing endpoints during backend work. For SQL, lightweight extensions can connect to MySQL, PostgreSQL, or SQLite with syntax highlighting and simple query runners (pick one that matches what your project uses).
+        </p>
+
+        <h2>Remote work and containers</h2>
+        <p>
+          <strong>Remote – SSH</strong> and <strong>Dev Containers</strong> help when your code runs on a server or inside Docker. You edit locally while the language server and terminal execute in the remote environment, which reduces “works on my machine” problems for teams.
+        </p>
+
+        <h2>Themes, icons, and small comforts</h2>
+        <p>
+          A readable theme (dark or light) and a clear file icon set reduce eye strain during long sessions. These are personal choices—not “productivity hacks”—but they matter when you stare at code for hours.
+        </p>
+
+        <h2>Cursor and AI‑assisted coding</h2>
+        <p>
+          Cursor ships with AI features for chat, edits, and codebase awareness. You can still install most VS Code extensions from the Marketplace; just avoid piling on redundant tools. If something overlaps with built‑in AI or formatting, disable one side so behavior stays predictable.
+        </p>
+
+        <h2>How to choose without overload</h2>
+        <p>
+          Start with formatting, linting, and Git visibility for your stack. Add one extension at a time, read what it changes in Settings, and remove what you do not use after a week. A smaller, understood setup beats a crowded sidebar you never configured.
+        </p>
+      </article>
+
+      <p class="mt-12 border-t border-black/5 pt-8">
+        <a href="index.html" class="text-sm font-medium text-emerald-800 hover:underline">← All articles</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>

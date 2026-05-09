@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Articles | Dexter Orro</title>
+  <meta name="description" content="Web development articles and notes by Dexter Orro." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="bg-[#f7f7f2] text-zinc-950">
+  <div class="page-glow"></div>
+
+  <main class="min-h-screen w-full overflow-hidden bg-[#f7f7f2]">
+    <header class="sticky top-0 z-50 border-b border-black/5 bg-[#f7f7f2]/80 backdrop-blur-xl">
+      <nav class="flex items-center justify-between px-6 py-5 md:px-10 lg:px-16">
+        <a href="../index.html#home" class="group flex items-center gap-3">
+          <span class="grid h-9 w-9 place-items-center rounded-full bg-zinc-950 text-sm font-bold text-white transition-transform duration-300 group-hover:rotate-12">DO</span>
+          <span class="hidden text-sm font-semibold md:block">Dexter Orro</span>
+        </a>
+
+        <div class="hidden items-center gap-8 text-sm text-zinc-600 md:flex">
+          <a class="nav-link" href="../index.html#work">Work</a>
+          <a class="nav-link" href="../index.html#services">Services</a>
+          <a class="nav-link" href="../index.html#projects">Projects</a>
+          <a class="nav-link font-semibold text-zinc-900" href="index.html" aria-current="page">Articles</a>
+          <a class="nav-link" href="../index.html#contact">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="hidden rounded-full border border-black/10 px-4 py-2 text-xs text-zinc-600 sm:block">Philippines</span>
+          <a href="../index.html#contact" class="rounded-full bg-zinc-950 px-5 py-2.5 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-zinc-800">Let’s talk</a>
+        </div>
+      </nav>
+    </header>
+
+    <article class="mx-auto max-w-5xl px-5 py-16 sm:px-8 md:px-12 lg:py-20">
+      <div class="section-label">Writing</div>
+      <h1 class="section-title mt-2">Articles</h1>
+      <p class="mt-4 text-lg text-zinc-600">Notes on building for the web—tools, workflows, and lessons from real projects.</p>
+
+      <ul class="mt-12 space-y-4" role="list">
+     
+        <li class="rounded-2xl border border-black/5 bg-white/60 p-5">
+          <a href="how-to-start-learning-web-development.html" class="group block">
+            <span class="text-xs font-semibold uppercase tracking-widest text-zinc-500">Beginner Guide</span>
+            <span class="mt-1 block text-lg font-semibold text-zinc-900 group-hover:text-emerald-800">How to Start Learning Web Development as a Beginner</span>
+            <span class="mt-1 block text-sm text-zinc-600">HTML, CSS, JavaScript, practice tips, and backend next steps.</span>
+          </a>
+        </li>
+
+        <li class="rounded-2xl border border-dashed border-black/15 bg-white/35 p-5">
+          <div class="block cursor-default" aria-label="Coming soon">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="text-xs font-semibold uppercase tracking-widest text-zinc-500">Toolbox</span>
+              <span class="rounded-full border border-black/10 bg-white/90 px-3 py-1 text-[0.65rem] font-bold uppercase tracking-widest text-zinc-500">Soon</span>
+            </div>
+            <span class="mt-1 block text-lg font-semibold text-zinc-500">Common IDE Extensions Developers Use in VS Code &amp; Cursor</span>
+            <span class="mt-1 block text-sm text-zinc-500">ESLint, Prettier, GitLens, API clients, remote dev, and how to avoid extension overload.</span>
+          </div>
+        </li>
+      </ul>
+
+      <p class="mt-14 text-sm text-zinc-500">
+        <a href="../index.html" class="font-medium text-zinc-800 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-800">← Back to portfolio</a>
+      </p>
+    </article>
+  </main>
+</body>
+</html>

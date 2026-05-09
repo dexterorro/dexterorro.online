@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dexter Orro | Digital Portfolio</title>
+  <meta name="description" content="Modern portfolio website for Dexter Orro, a web developer and digital creator based in the Philippines." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-[#f7f7f2] text-zinc-950">
+  <div class="page-glow"></div>
+
+  <main class="min-h-screen w-full overflow-hidden bg-[#f7f7f2]">
+    <header class="sticky top-0 z-50 border-b border-black/5 bg-[#f7f7f2]/80 backdrop-blur-xl">
+      <nav class="flex items-center justify-between px-6 py-5 md:px-10 lg:px-16">
+        <a href="#home" class="group flex items-center gap-3">
+          <span class="grid h-9 w-9 place-items-center rounded-full bg-zinc-950 text-sm font-bold text-white transition-transform duration-300 group-hover:rotate-12">DO</span>
+          <span class="hidden text-sm font-semibold md:block">Dexter Orro</span>
+        </a>
+
+        <div class="hidden items-center gap-8 text-sm text-zinc-600 md:flex">
+          <a class="nav-link" href="#work">Work</a>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="articles/index.html">Articles</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+
+          <a href="#contact" class="rounded-full bg-zinc-950 px-5 py-2.5 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-zinc-800">Let’s talk</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="relative grid min-h-[620px] items-center gap-12 px-4 py-20 sm:px-6 md:px-8 lg:grid-cols-[1.05fr_.95fr] lg:px-10 xl:px-12">
+      <div class="animate-fade-up">
+        <div class="mb-8 flex items-center gap-4">
+          <div class="avatar-ring">
+            <img src="img/image.jfif" alt="Dexter Orro" width="56" height="56" class="block h-14 w-14 rounded-full object-cover" loading="lazy" decoding="async" />
+          </div>
+          <div>
+            <p class="text-sm font-semibold">Available for digital projects</p>
+            <p class="text-xs text-zinc-500">Web design • Development • Systems</p>
+          </div>
+        </div>
+
+        <h1 class="max-w-2xl text-5xl font-semibold tracking-[-0.07em] text-zinc-950 sm:text-6xl lg:text-7xl" aria-label="Hello! I'm Dexter Orro">
+          <span id="hero-type-line"></span><span id="hero-type-name" class="text-gradient"></span><span id="hero-type-cursor" class="type-cursor" aria-hidden="true"></span>
+        </h1>
+        <p class="mt-6 max-w-xl text-lg leading-8 text-zinc-600">
+          A modern web developer and digital creator based in the Philippines, building clean interfaces and practical systems for real-world use.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-3">
+          <a href="#contact" class="btn-primary">Work with me</a>
+          <a href="#projects" class="btn-secondary">See projects</a>
+        </div>
+      </div>
+
+      <div class="relative animate-float">
+        <div class="hero-card">
+          <div class="flex items-start justify-between gap-4">
+            <div class="min-w-0 flex-1">
+              <span class="section-label block">At a glance</span>
+              <h2 class="mt-3 text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
+                Websites and Systems Built for Growth
+              </h2>
+              <p class="mt-3 text-sm leading-relaxed text-zinc-600 md:text-base">
+                From modern landing pages to full CRUD systems — clean design, organized structure, and reliable development.
+              </p>
+            </div>
+            <div class="h-12 w-12 shrink-0 rounded-full bg-zinc-950 p-3 text-white" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+            </div>
+          </div>
+
+          <div class="mt-10 grid grid-cols-2 gap-4">
+            <div class="stat-card"><span>54K+</span><p>Community Followers</p></div>
+            <div class="stat-card"><span>15+</span><p>Projects Completed</p></div>
+            <div class="stat-card"><span>5+</span><p>Ongoing Projects</p></div>
+            <div class="stat-card"><span>1</span><p>Articles Published</p></div>
+          </div>
+        </div>
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+      </div>
+    </section>
+
+    <section id="work" class="grid gap-10 border-y border-black/5 bg-[#eeeee7] px-6 py-16 md:px-10 lg:grid-cols-2 lg:px-16">
+      <div class="reveal">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">Working experience</h2>
+        <div class="mt-8 space-y-4">
+          <article class="timeline-card">
+            <span class="icon-box">01</span>
+            <div><h3>Freelance Web Developer</h3><p>2021–2023</p></div>
+          </article>
+          <article class="timeline-card">
+            <span class="icon-box">02</span>
+            <div><h3>Intern Web Developer</h3><p>2023–2024</p></div>
+          </article>
+          <article class="timeline-card">
+            <span class="icon-box">03</span>
+            <div><h3>Junior Computer Programmer</h3><p>2025–present</p></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="reveal delay-100">
+        <div class="section-label">Highlights</div>
+        <h2 class="section-title">Awards & Certificates</h2>
+        <div class="mt-8 space-y-4">
+          <article class="award-card">
+            <span class="icon-box">01</span>
+            <div class="min-w-0 flex-1">
+              <h3>Programmer of the year</h3>
+              <p>Northeastern College · Issued Jul 2024</p>
+            </div>
+          </article>
+          <article class="award-card">
+            <span class="icon-box">02</span>
+            <div class="min-w-0 flex-1">
+              <h3>Web Developer of the year</h3>
+              <p>Northeastern College · Issued Jul 2024</p>
+            </div>
+          </article>
+          <article class="award-card">
+            <span class="icon-box">03</span>
+            <div class="award-card__inner">
+              <div class="award-card__text">
+                <h3>Responsive Web Design</h3>
+                <p>freeCodeCamp · Issued Feb 2024</p>
+              </div>
+              <a class="award-credential-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="See credential for Responsive Web Design (opens in new tab)">
+                <svg class="award-credential-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M17 7H9.5M17 7v7.5"/></svg>
+                <span class="sr-only">See credential</span>
+              </a>
+            </div>
+          </article>
+          <div id="awards-extra" class="hidden space-y-4">
+            <article class="award-card">
+              <span class="icon-box">04</span>
+              <div class="award-card__inner">
+                <div class="award-card__text">
+                  <h3>PHP &amp; MySQL — Certification Course for Beginners</h3>
+                  <p>Udemy · Issued Nov 2022</p>
+                </div>
+                <a class="award-credential-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="See credential for PHP and MySQL course (opens in new tab)">
+                  <svg class="award-credential-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M17 7H9.5M17 7v7.5"/></svg>
+                  <span class="sr-only">See credential</span>
+                </a>
+              </div>
+            </article>
+            <article class="award-card">
+              <span class="icon-box">05</span>
+              <div class="min-w-0 flex-1">
+                <h3>Coding Basic: Creating your Web Profile using HTML, CSS, and Bootstrap</h3>
+                <p>Zuitt — Coding Bootcamp · Issued Aug 2022<br /><span class="text-zinc-500">Credential ID 01855</span></p>
+              </div>
+            </article>
+            <article class="award-card">
+              <span class="icon-box">06</span>
+              <div class="award-card__inner">
+                <div class="award-card__text">
+                  <h3>Learn HTML — For Beginners</h3>
+                  <p>Udemy · Issued Jul 2022<br /><span class="text-zinc-500">Credential ID 0004</span></p>
+                </div>
+                <a class="award-credential-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="See credential for Learn HTML course (opens in new tab)">
+                  <svg class="award-credential-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M17 7H9.5M17 7v7.5"/></svg>
+                  <span class="sr-only">See credential</span>
+                </a>
+              </div>
+            </article>
+            <article class="award-card">
+              <span class="icon-box">07</span>
+              <div class="min-w-0 flex-1">
+                <h3>Microsoft Digital Literacy</h3>
+                <p>TESDA: Technical Education and Skills Development Authority · Issued Feb 2022<br /><span class="text-zinc-500">Credential ID sKxlC8udJT</span></p>
+              </div>
+            </article>
+          </div>
+          <button type="button" id="awards-see-more" class="award-see-more" aria-expanded="false" aria-controls="awards-extra">See more</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="px-6 py-20 md:px-10 lg:px-16">
+      <div class="mb-10 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+        <div>
+          <div class="section-label">Services</div>
+          <h2 class="section-title">I can help you with</h2>
+        </div>
+        <a href="#contact" class="hidden rounded-full border border-black/10 px-5 py-3 text-sm transition hover:bg-white md:inline-flex">Start a project</a>
+      </div>
+
+      <div class="grid gap-5 lg:grid-cols-3">
+        <article class="service-card reveal">
+          <span class="service-number">01</span>
+          <h3>Modern website design</h3>
+          <p>Landing pages and portfolio websites with clean layouts, responsive sections, and smooth animations.</p>
+        </article>
+        <article class="service-card reveal delay-100">
+          <span class="service-number">02</span>
+          <h3>Web system development</h3>
+          <p>CRUD systems, dashboards, database workflows, forms, validation, and admin modules.</p>
+        </article>
+        <article class="service-card reveal delay-200">
+          <span class="service-number">03</span>
+          <h3>UI improvement</h3>
+          <p>Enhancing old pages into modern interfaces using Tailwind, custom CSS, and better user experience.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="bg-[#eeeee7] px-6 py-20 md:px-10 lg:px-16">
+      <div class="mb-10 flex items-end justify-between gap-5">
+        <div>
+          <div class="section-label">Selected work</div>
+          <h2 class="section-title">Project showcase</h2>
+        </div>
+      </div>
+
+      <div class="project-strip">
+        <article class="project-card large reveal">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <h3>Procurement Planning System</h3>
+          <p>Versioning, indicative/final workflow, approval states, and amendment tracking.</p>
+          <div class="mock-grid"><span></span><span></span><span></span><span></span></div>
+        </article>
+        <article class="project-card reveal delay-100">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <h3>Inventory POS App</h3>
+          <p>Simple dashboard concept for products, sales, and stock movement.</p>
+          <div class="mock-chart"></div>
+        </article>
+        <article class="project-card reveal delay-200">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <h3>Dark Code Content</h3>
+          <p>Programming brand visuals, captions, tutorials, and community growth.</p>
+          <div class="code-lines"><span></span><span></span><span></span><span></span></div>
+        </article>
+      </div>
+      <button type="button" id="projects-see-more" class="award-see-more mt-8" aria-expanded="false" aria-controls="projects-extra">See more</button>
+      <div id="projects-extra" class="mt-6 hidden">
+        <div class="project-strip project-strip--extra">
+          <article class="project-card reveal">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <h3>Business Landing Suite</h3>
+            <p>Multi-section marketing pages with forms, CMS-style blocks, and performance-focused delivery.</p>
+            <div class="mock-grid"><span></span><span></span><span></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="px-6 py-20 md:px-10 lg:px-16">
+      <div class="contact-panel reveal">
+        <div class="contact-panel__main">
+          <div>
+            <div class="section-label text-white/60">Contact</div>
+            <h2 class="max-w-2xl text-4xl font-semibold tracking-[-0.04em] text-white md:text-6xl">Let’s build something useful and modern.</h2>
+            <p class="mt-6 max-w-xl text-white/60">Need a portfolio, landing page, admin system, or UI redesign? Send a message and let’s turn your idea into a real website.</p>
+          </div>
+          <a href="mailto:dexterorro@example.com" class="contact-button">Email me</a>
+        </div>
+
+        <aside class="contact-panel__marquee" aria-hidden="true">
+          <p class="tech-marquee-title">Tech stack</p>
+          <div class="tech-marquee tech-marquee--single" role="presentation">
+            <div class="tech-marquee__track">
+              <div class="tech-marquee__group">
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/html5.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">HTML5</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/css3.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">CSS3</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">JavaScript</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/typescript.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">TypeScript</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/php.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">PHP</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mysql.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">MySQL</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">React</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nodedotjs.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">Node.js</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tailwindcss.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">Tailwind</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/bootstrap.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">Bootstrap</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/git.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">Git</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/vite.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">Vite</span></span>
+              </div>
+              <div class="tech-marquee__group">
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/html5.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">HTML5</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/css3.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">CSS3</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">JavaScript</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/typescript.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">TypeScript</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/php.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">PHP</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mysql.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">MySQL</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">React</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nodedotjs.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">Node.js</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tailwindcss.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">Tailwind</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/bootstrap.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">Bootstrap</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/git.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">Git</span></span>
+                <span class="tech-marquee__item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/vite.svg" width="44" height="44" alt="" loading="lazy" decoding="async" /><span class="tech-marquee__label">Vite</span></span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    (function heroTyping() {
+      const lineEl = document.getElementById('hero-type-line');
+      const nameEl = document.getElementById('hero-type-name');
+      const h1 = lineEl && nameEl ? lineEl.closest('h1') : null;
+      if (!lineEl || !nameEl || !h1) return;
+
+      const part1 = "Hello! I'm ";
+      const part2 = 'Dexter Orro';
+      const delayMs = 58;
+      const repeatMs = 10000;
+
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        lineEl.textContent = part1;
+        nameEl.textContent = part2;
+        const cur = document.getElementById('hero-type-cursor');
+        if (cur) cur.remove();
+        return;
+      }
+
+      let typingGen = 0;
+
+      function ensureCursor() {
+        let c = document.getElementById('hero-type-cursor');
+        if (!c) {
+          c = document.createElement('span');
+          c.id = 'hero-type-cursor';
+          c.className = 'type-cursor';
+          c.setAttribute('aria-hidden', 'true');
+          h1.appendChild(c);
+        }
+        c.classList.remove('type-cursor--done');
+        return c;
+      }
+
+      function runTypingCycle() {
+        typingGen += 1;
+        const gen = typingGen;
+
+        lineEl.textContent = '';
+        nameEl.textContent = '';
+
+        const cursorEl = ensureCursor();
+
+        function typeChunk(text, el, index, onDone) {
+          if (gen !== typingGen) return;
+          if (index >= text.length) {
+            onDone();
+            return;
+          }
+          el.appendChild(document.createTextNode(text[index]));
+          setTimeout(() => typeChunk(text, el, index + 1, onDone), delayMs);
+        }
+
+        typeChunk(part1, lineEl, 0, () => {
+          typeChunk(part2, nameEl, 0, () => {
+            if (gen !== typingGen) return;
+            cursorEl.classList.add('type-cursor--done');
+            setTimeout(() => {
+              if (gen !== typingGen) return;
+              cursorEl.remove();
+            }, 800);
+          });
+        });
+      }
+
+      runTypingCycle();
+      setInterval(runTypingCycle, repeatMs);
+    })();
+
+    (function awardsSeeMore() {
+      const btn = document.getElementById('awards-see-more');
+      const extra = document.getElementById('awards-extra');
+      if (!btn || !extra) return;
+      btn.addEventListener('click', () => {
+        extra.classList.toggle('hidden');
+        const open = !extra.classList.contains('hidden');
+        btn.setAttribute('aria-expanded', String(open));
+        btn.textContent = open ? 'See less' : 'See more';
+      });
+    })();
+
+    (function projectsSeeMore() {
+      const btn = document.getElementById('projects-see-more');
+      const extra = document.getElementById('projects-extra');
+      if (!btn || !extra) return;
+      btn.addEventListener('click', () => {
+        extra.classList.toggle('hidden');
+        const open = !extra.classList.contains('hidden');
+        btn.setAttribute('aria-expanded', String(open));
+        btn.textContent = open ? 'See less' : 'See more';
+        if (open) {
+          extra.querySelectorAll('.reveal').forEach((el) => el.classList.add('show'));
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
